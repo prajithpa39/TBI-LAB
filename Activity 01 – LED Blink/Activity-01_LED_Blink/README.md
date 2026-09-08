@@ -24,3 +24,17 @@ Minor syntax errors while writing the sketch.
 Real-World Applications: Status indicator lights, warning/signal lights, traffic signal controllers.
 
 Connection to PoC: Forms the base for slot status indicator LEDs — showing a slot as vacant (OFF/Green) or occupied (ON/Red), and a blinking "searching for a free slot" indicator.
+code:
+   void setup()
+{
+  pinMode(13, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(13, HIGH);
+  delay(1000);
+
+  digitalWrite(13, LOW);
+  delay(1000);
+}
